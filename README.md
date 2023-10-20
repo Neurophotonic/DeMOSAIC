@@ -1,5 +1,4 @@
-# DeIP
-## DeMOSAIC Image Processing Module
+# DeMOSAIC Image Processing Module
 
 ## Overview
 This module is designed for unmixing images detected by DeMOSAIC (Diffractive Multisite Optical Segmentation Assisted Image Compression). It accomplishes the following tasks:
