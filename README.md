@@ -9,6 +9,7 @@ This module is designed for unmixing images detected by DeMOSAIC (Diffractive Mu
 3. Re-stitches the image to form the final output.
 
 <Example with colored, 128x128 image>
+
 ![befor process](/img/TEST_MIXED_uint8.png) to ![after process](/img/TEST_DEMIXED_uint8.png)
 
 ## To run
