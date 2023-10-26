@@ -1,6 +1,9 @@
-# DeMOSAIC Image Processing Module
+# DeMOSAIC tools
 
-## Overview
+# 1. Patterned Illumiation
+This matlab code is designed for patterned illumition (in writing)
+
+# 2. Unmixing module
 This module is designed for unmixing images detected by DeMOSAIC (Diffractive Multisite Optical Segmentation Assisted Image Compression). It accomplishes the following tasks:
 
 1. Splits the image of the detection channel.
@@ -21,5 +24,10 @@ This module is designed for unmixing images detected by DeMOSAIC (Diffractive Mu
 ## Environment
 The Python code was tested on Windows 10 using Anaconda3. The required libraries and packages are listed in requirements.txt.
 
-## Jupyter notebooks
-We provide Jupyter Notebooks for additional analyses after unmixing. These include extraction of DF/F0, detrending, and spike-triggered averaging (STA).
+# 3. Postprocessing tools
+We provide Jupyter Notebooks for additional analyses after unmixing. These include 
+
+1. DFF_and_Detrend.ipynb
+extraction of DF/F0, detrending
+2. STA.ipynb
+and spike-triggered averaging (STA)
