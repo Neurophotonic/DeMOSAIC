@@ -1,7 +1,7 @@
 # DeMOSAIC tools
 
 # 1. Patterned Illumiation
-This matlab code is designed for patterned illumition (in writing)
+This matlab code is designed for patterned illumition (updating)
 
 # 2. Unmixing module
 This module is designed for unmixing images detected by DeMOSAIC (Diffractive Multisite Optical Segmentation Assisted Image Compression). It accomplishes the following tasks:
@@ -17,7 +17,7 @@ This module is designed for unmixing images detected by DeMOSAIC (Diffractive Mu
 ## To run
   
   ```
-  python process.py --src_path C:/.../raw_image.tiff --ratio_path C:/.../ratio.csv --dark_path(optional) C:/.../dark.tiff 
+  python unmixing.py --src_path C:/.../raw_image.tiff --ratio_path C:/.../ratio.csv --dark_path(optional) C:/.../dark.tiff 
   --new_name newfilename.tiff --tune(optional)
   ```
 
