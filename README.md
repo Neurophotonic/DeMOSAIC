@@ -1,9 +1,13 @@
 # DeMOSAIC tools
 
-# 1. Patterned Illumiation
-This matlab code is designed for patterned illumition (updating)
+# 1. Optical segmentation and patterned illumination
+## 1.1 Coregistration
+Matlab codes for coregistration between image plane and DMD, SLM plane.
 
-# 2. Unmixing module
+## 1.2. Pattern_genetaion
+Matlab codes for making SLM optical segmentation pattern from user-selected ROIs. 
+
+# 2. Unmixing module (python)
 This module is designed for unmixing images detected by DeMOSAIC (Diffractive Multisite Optical Segmentation Assisted Image Compression). It accomplishes the following tasks:
 
 1. Splits the image of the detection channel.
