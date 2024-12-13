@@ -2,8 +2,7 @@ function expand_ROI
     % Function to expand ROIs in a binary TIFF file while maintaining their shape
 
     % Add necessary paths (update paths as needed)
-    addpath(genpath('D:\Sean NAS\DemOSAIC Project\Matlab code\Pattern generation\images'));
-    addpath(genpath('D:\Sean NAS\Demosaic Project\Exp data\Non Voltage Exp\SFig_Registration\grid coregistration'));
+    addpath(genpath(''));
 
     % Load the binary TIFF image
     [DMDinput_filename, DMDinput_path] = uigetfile('*.tif', 'Select binary TIFF file for ROI expansion.');
