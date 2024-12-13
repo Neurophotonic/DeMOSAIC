@@ -13,7 +13,7 @@ The Matlab code was tested on Windows 11 using Matlab R2023a.
 ## 1.1 Coregistration
 Matlab codes for coregistration between image plane and DMD, SLM plane.
 
-## 1.2. Pattern_genetaion
+## 1.2. Pattern_generation
 Matlab codes for making SLM optical segmentation pattern from user-selected ROIs. 
 
 # 2. Unmixing module (python)
