@@ -34,9 +34,6 @@ This module is designed for unmixing images detected by DeMOSAIC (Diffractive Mu
   --new_name newfilename.tiff --tune(optional)
   ```
 
-## Environment
-The Python code was tested on Windows 10 using Anaconda3. The required libraries and packages are listed in requirements.txt.
-
 # 3. Postprocessing tools
 We provide Jupyter Notebooks for additional analyses after unmixing. These include 
 
