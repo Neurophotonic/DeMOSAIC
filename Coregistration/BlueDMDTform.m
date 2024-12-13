@@ -1,5 +1,5 @@
 function varargout = BlueDMDTform
-addpath(genpath('D:\Sean NAS\DemOSAIC Project\Matlab code\Pattern generation\images'));
+addpath(genpath(''));
 
 % Load the reference image.
 DMDinput_filename = uigetfile('*.*', 'Select DMD input(reference) pattern image.');
