@@ -8,6 +8,7 @@ The Python code was tested on Windows 11 and MacOS(Sequoia 15.1.1) using Anacond
 
 The Matlab code was tested on Windows 11 using Matlab R2023a.
 
+
 # 1. Optical segmentation and patterned illumination
 ## 1.1 Coregistration
 Matlab codes for coregistration between image plane and DMD, SLM plane.
