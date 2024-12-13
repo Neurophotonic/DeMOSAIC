@@ -1,5 +1,5 @@
 clear all
-addpath(genpath('D:\DeMOSAIC share\Grid\Patterns'))
+addpath(genpath(''))
 load('tform_RedDMD_Widefield.mat');
 load('tform_BlueDMD_Widefield.mat');
 
