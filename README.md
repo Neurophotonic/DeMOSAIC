@@ -11,7 +11,7 @@ Simply download Anaconda3 and Matlab, and you are good to go. This would take 10
 
 # 1. Optical segmentation and patterned illumination
 ## 1.1 Coregistration
-Matlab codes for coregistration between image plane and DMD, SLM plane. Run 
+Matlab codes for coregistration between image plane and DMD, SLM plane. Run each Transform code, and you will need to select two images. First select the SLM input 
 
 ## 1.2. Pattern_generation
 Matlab codes for making SLM optical segmentation pattern from user-selected ROIs. 
