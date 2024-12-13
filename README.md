@@ -11,10 +11,10 @@ Simply download Anaconda3 and Matlab, and you are good to go. This would take 10
 
 # 1. Optical segmentation and patterned illumination
 ## 1.1 Coregistration
-Matlab codes for coregistration between image plane and DMD, SLM plane. Run each Transform code, and you will need to select two images. First select the SLM input 
+Matlab codes for coregistration between image plane and DMD, SLM plane. Run each Transform code, and you will need to select two images. First select the DMD input image, and next select the output image (The image you took). Coregistrate the two by selecting corresponding points of the two image. Retry if coregistration is unsatisfactory.
 
 ## 1.2. Pattern_generation
-Matlab codes for making SLM optical segmentation pattern from user-selected ROIs. 
+Matlab codes for making SLM optical segmentation pattern from user-selected ROIs. The input is always a binary tiff file of the user-selected ROIs. Patterned_illumination.m only generates the image for DMD input. ROI_pattern.m generates both the DMD input, SLM input, and an optional image for the optostimulation DMD if necessary. ROI_Pattern_watershed.m generates a watershed pattern of the input ROIs. ROI_Pattern_multiple.m generates the DMD images containing individual ROIs one by one. ROI_expand.m returns an expanded ROI.
 
 # 2. Unmixing module (python)
 This module is designed for unmixing images detected by DeMOSAIC (Diffractive Multisite Optical Segmentation Assisted Image Compression). It accomplishes the following tasks:
@@ -34,6 +34,8 @@ This module is designed for unmixing images detected by DeMOSAIC (Diffractive Mu
   --new_name newfilename.tiff --tune(optional)
   ```
 Running the code might require additional libraries. The libaries are stated in the requirements.txt
+
+All files for demonstartion are in the demo folder.
 
 # 3. Postprocessing tools
 We provide Jupyter Notebooks for additional analyses after unmixing. These include 
