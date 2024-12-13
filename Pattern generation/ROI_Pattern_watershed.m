@@ -1,7 +1,6 @@
-
 clear all
 addpath(genpath('D:\Sean NAS\DemOSAIC Project\Matlab code\Pattern generation\images'));
-
+addpath(genpath('D:\DeMOSAIC share\Grid\Patterns'))
 load('tform_RedDMD_Widefield.mat');
 load('tform_BlueDMD_Widefield.mat');
 load('tform_SLM.mat');
@@ -30,14 +29,15 @@ imwrite(roi_tr2_Inverse,roi_tr2_name);
 SLM = imwarp(roi_tr2, tform_SLM, 'OutputView', imref2d(SLM_size));
 
 % Watershed ROI option
-SLM_pat = SLMpatGen_Sean(SLM, uigetpath);
-% SLM_pat = SLMpatGen_Sean_watershed(SLM, uigetpath);
+% SLM_pat = SLMpatGen_Sean(SLM, uigetpath);
+SLM_pat = SLMpatGen_Watershed(SLM, uigetpath);
 
 SLM_pat_flip = flipud(SLM_pat);
 SLM_pattern_filename = fullfile(uigetpath, gen_FileName('SLM.png'));
 SLM_pattern_flip_filename = fullfile(uigetpath, gen_FileName('Flip_SLM.png'));
 imwrite(SLM_pat, SLM_pattern_filename);
 imwrite(SLM_pat_flip, SLM_pattern_flip_filename);
+
 
 % Widefield to BlueDMD transform
 while true
@@ -47,12 +47,10 @@ while true
     roi_tr4_name = fullfile(uigetpath, gen_FileName('Optostim'));
     imwrite(roi_tr4,roi_tr4_name);
     
-promptMessage = sprintf('Continue to select stim? Cancel to abort processing?');
-button = questdlg(promptMessage, 'Continue', 'Continue', 'Cancel', 'Continue');
-if strcmp(button, 'Cancel')
+promptMessage = sprintf('Continue to select stim? Finish?');
+button = questdlg(promptMessage, 'Continue', 'Continue', 'Finish', 'Continue'); 
+if strcmp(button, 'Finish')
   break % return or break or whatever...
 end
 end
-
-
 
