@@ -5,13 +5,13 @@
 A standard computer with enough RAM to support the in-memory operations is needed.
 ## Software requirements
 The Python code was tested on Windows 11 and MacOS(Sequoia 15.1.1) using Anaconda3 with python 3.12.2. The required libraries and packages are listed in requirements.txt.
-
 The Matlab code was tested on Windows 11 using Matlab R2023a.
-
+## Installation Guide
+Simply download Anaconda3 and Matlab, and you are good to go. This would take 10-15 minutes in total.
 
 # 1. Optical segmentation and patterned illumination
 ## 1.1 Coregistration
-Matlab codes for coregistration between image plane and DMD, SLM plane.
+Matlab codes for coregistration between image plane and DMD, SLM plane. Run 
 
 ## 1.2. Pattern_generation
 Matlab codes for making SLM optical segmentation pattern from user-selected ROIs. 
@@ -33,6 +33,7 @@ This module is designed for unmixing images detected by DeMOSAIC (Diffractive Mu
   python unmixing.py --src_path C:/.../raw_image.tiff --ratio_path C:/.../ratio.csv --dark_path(optional) C:/.../dark.tiff 
   --new_name newfilename.tiff --tune(optional)
   ```
+Running the code might require additional libraries. The libaries are stated in the requirements.txt
 
 # 3. Postprocessing tools
 We provide Jupyter Notebooks for additional analyses after unmixing. These include 
