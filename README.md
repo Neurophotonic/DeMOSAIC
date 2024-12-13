@@ -5,6 +5,7 @@
 A standard computer with enough RAM to support the in-memory operations is needed.
 ## Software requirements
 The Python code was tested on Windows 11 and MacOS(Sequoia 15.1.1) using Anaconda3. The required libraries and packages are listed in requirements.txt.
+
 The Matlab code was tested on Windows 11 using Matlab R2023a.
 
 # 1. Optical segmentation and patterned illumination
