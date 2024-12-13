@@ -1,6 +1,6 @@
 
 clear all
-addpath(genpath('D:\Sean NAS\DemOSAIC Project\Matlab code\Pattern generation\images'));
+addpath(genpath(''));
 
 load('tform_RedDMD_Widefield.mat');
 load('tform_BlueDMD_Widefield.mat');
